@@ -48,6 +48,11 @@ func (b *Beacon) StartAdvertising() error {
 	return server.AdvertiseAndServe()
 }
 
+func (b *Beacon) StopAdvertising() error {
+
+	b.GattServer.Close()
+}
+
 //From https://github.com/paypal/gatt/blob/master/uuid.go
 func ParseUUID(s string) ([]byte, error) {
 	s = strings.Replace(s, "-", "", -1)
