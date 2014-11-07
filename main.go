@@ -50,7 +50,7 @@ func (b *Beacon) StartAdvertising() error {
 
 func (b *Beacon) StopAdvertising() error {
 
-	b.GattServer.Close()
+	return b.GattServer.Close()
 }
 
 //From https://github.com/paypal/gatt/blob/master/uuid.go
