@@ -1,0 +1,334 @@
+﻿-- logger module started --
+main debug: VLC media player - 2.1.4 Rincewind
+main debug: Copyright © 1996-2014 the VideoLAN team
+main debug: revision 2.1.4-0-g2a072be
+main debug: configured with ../extras/package/macosx/../../../configure  '--prefix=/Users/fkuehne/Desktop/videolan/gits/vlc-2.1/release/vlc_install_dir' '--enable-macosx' '--enable-merge-ffmpeg' '--enable-growl' '--enable-faad' '--enable-flac' '--enable-theora' '--enable-shout' '--enable-ncurses' '--enable-twolame' '--enable-realrtsp' '--enable-libass' '--enable-macosx-audio' '--enable-macosx-eyetv' '--enable-macosx-qtkit' '--enable-macosx-vout' '--disable-caca' '--disable-skins2' '--disable-xcb' '--disable-sdl' '--disable-samplerate' '--disable-macosx-dialog-provider' '--with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk' '--build=x86_64-apple-darwin10' '--with-macosx-version-min=10.6' 'build_alias=x86_64-apple-darwin10' 'CC=xcrun clang' 'CXX=xcrun clang++' 'OBJC=xcrun clang'
+main debug: using interface module "logger"
+main debug: looking for interface module matching "(null),none": 15 candidates
+main debug: no interface modules matched
+main error: no suitable interface module
+main debug: looking for interface module matching "logger,none": 15 candidates
+logger: using logger.
+logger debug: opening logfile `vlc-log.txt'
+﻿-- logger module started --
+main debug: VLC media player - 2.1.4 Rincewind
+main debug: Copyright © 1996-2014 the VideoLAN team
+main debug: revision 2.1.4-0-g2a072be
+main debug: configured with ../extras/package/macosx/../../../configure  '--prefix=/Users/fkuehne/Desktop/videolan/gits/vlc-2.1/release/vlc_install_dir' '--enable-macosx' '--enable-merge-ffmpeg' '--enable-growl' '--enable-faad' '--enable-flac' '--enable-theora' '--enable-shout' '--enable-ncurses' '--enable-twolame' '--enable-realrtsp' '--enable-libass' '--enable-macosx-audio' '--enable-macosx-eyetv' '--enable-macosx-qtkit' '--enable-macosx-vout' '--disable-caca' '--disable-skins2' '--disable-xcb' '--disable-sdl' '--disable-samplerate' '--disable-macosx-dialog-provider' '--with-macosx-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk' '--build=x86_64-apple-darwin10' '--with-macosx-version-min=10.6' 'build_alias=x86_64-apple-darwin10' 'CC=xcrun clang' 'CXX=xcrun clang++' 'OBJC=xcrun clang'
+main debug: using interface module "logger"
+lua: Lua HTTP interface
+main debug: Creating an input for 'Media Library'
+main debug: creating VLM
+lua debug: Loaded /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/http/custom.lua
+main debug: net: listening to * port 8080
+main debug: Input is a meta file: disabling unneeded options
+main debug: using timeshift granularity of 50 MiB, in path '/tmp'
+main debug: `file/xspf-open:///Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf' gives access `file' demux `xspf-open' path `/Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf'
+main debug: creating demux: access='file' demux='xspf-open' location='/Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf' file='/Users/izqui/Library/Application Support/org.videolan.vlc/ml.xspf'
+main debug: looking for access_demux module matching "file": 14 candidates
+main debug: no access_demux modules matched
+main debug: creating access 'file' location='/Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf', path='/Users/izqui/Library/Application Support/org.videolan.vlc/ml.xspf'
+main debug: looking for access module matching "file": 18 candidates
+filesystem debug: opening file `/Users/izqui/Library/Application Support/org.videolan.vlc/ml.xspf'
+main debug: using access module "filesystem"
+main debug: Using stream method for AStream*
+main debug: starting pre-buffering
+main debug: received first data after 14 ms
+main debug: pre-buffering done 296 bytes in 0s - 19 KiB/s
+main debug: looking for stream_filter module matching "any": 9 candidates
+main debug: no stream_filter modules matched
+main debug: looking for stream_filter module matching "record": 9 candidates
+main debug: using stream_filter module "record"
+main debug: creating demux: access='file' demux='xspf-open' location='/Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf' file='/Users/izqui/Library/Application Support/org.videolan.vlc/ml.xspf'
+main debug: looking for demux module matching "xspf-open": 63 candidates
+playlist debug: using XSPF playlist reader
+main debug: using demux module "playlist"
+main debug: looking for meta reader module matching "any": 2 candidates
+lua debug: Trying Lua scripts in /Users/izqui/Library/Application Support/org.videolan.vlc/lua/meta/reader
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/meta/reader
+lua debug: Trying Lua playlist script /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/meta/reader/filename.luac
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/share/lua/meta/reader
+main debug: no meta reader modules matched
+main debug: `file/xspf-open:///Users/izqui/Library/Application%20Support/org.videolan.vlc/ml.xspf' successfully opened
+main debug: looking for xml reader module matching "any": 1 candidates
+main debug: using xml reader module "xml"
+playlist debug: parsed 0 tracks successfully
+main debug: EOF reached
+main debug: removing module "playlist"
+main debug: removing module "record"
+main debug: removing module "filesystem"
+main debug: creating audio output
+main debug: looking for audio output module matching "any": 4 candidates
+auhal debug: found 2 audio device(s)
+auhal debug: DevID: 47 DevName: Built-in Input
+auhal debug: this 'Built-in Input' is INPUT only. skipping...
+auhal debug: DevID: 38 DevName: Built-in Output
+auhal debug: found 12 stream formats for stream id 39
+main debug: restart requested (2)
+main debug: using audio output module "auhal"
+main debug: keeping audio output
+main debug: adding item `http://169.254.194.95:9000/0' ( http://169.254.194.95:9000/0 )
+main debug: no fetch required for (null) (art currently (null))
+main debug: looking for interface module matching "hotkeys,none": 15 candidates
+main debug: using interface module "hotkeys"
+main: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+main debug: looking for interface module matching "any": 15 candidates
+main debug: looking for services probe module matching "any": 5 candidates
+main debug: no services probe modules matched
+main debug: looking for extension module matching "any": 1 candidates
+lua debug: Opening Lua Extension module
+lua debug: Trying Lua scripts in /Users/izqui/Library/Application Support/org.videolan.vlc/lua/extensions
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/extensions
+lua debug: Trying Lua playlist script /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/extensions/VLSub.luac
+lua debug: Scanning Lua script /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/extensions/VLSub.luac
+lua debug: Script /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/extensions/VLSub.luac has the following capability flags: 0x5
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/share/lua/extensions
+main debug: using extension module "lua"
+macosx debug: Found 1 video capture devices
+macosx debug: Found 1 audio capture devices
+main debug: processing request item: http://169.254.194.95:9000/0, node: Playlist, skip: 0
+main debug: rebuilding array of current - root Playlist
+main debug: rebuild done - 1 items, index 0
+main debug: starting playback of the new playlist item
+main debug: resyncing on http://169.254.194.95:9000/0
+main debug: http://169.254.194.95:9000/0 is at 0
+main debug: creating new input thread
+main debug: Creating an input for 'http://169.254.194.95:9000/0'
+main debug: using timeshift granularity of 50 MiB, in path '/tmp'
+main debug: `http://169.254.194.95:9000/0' gives access `http' demux `' path `169.254.194.95:9000/0'
+main debug: creating demux: access='http' demux='' location='169.254.194.95:9000/0' file='(null)'
+main debug: looking for access_demux module matching "http": 14 candidates
+main debug: no access_demux modules matched
+main debug: creating access 'http' location='169.254.194.95:9000/0', path='(null)'
+main debug: looking for access module matching "http": 18 candidates
+access_http debug: querying proxy for http://169.254.194.95:9000/0
+access_http debug: no proxy
+access_http debug: http: server='169.254.194.95' port=9000 file='/0'
+main debug: net: connecting to 169.254.194.95 port 9000
+main debug: connection succeeded (socket = 34)
+access_http debug: protocol 'HTTP' answer code 206
+access_http debug: Content-Type: video/x-msvideo
+access_http debug: stream size=490788616,pos=0,remaining=490788616
+access_http debug: this frame size=490788616
+access_http debug: Connection: close
+main debug: using access module "access_http"
+main debug: Using stream method for AStream*
+main debug: starting pre-buffering
+main debug: received first data after 0 ms
+main debug: pre-buffering done 1024 bytes in 0s - 13513 KiB/s
+main debug: looking for stream_filter module matching "any": 9 candidates
+main debug: no stream_filter modules matched
+main debug: looking for stream_filter module matching "record": 9 candidates
+main debug: using stream_filter module "record"
+main debug: creating demux: access='http' demux='' location='169.254.194.95:9000/0' file='(null)'
+main debug: looking for demux module matching "any": 63 candidates
+avi debug: <list 'AVI '>
+avi debug: <list 'hdrl'>
+avi debug: <list 'strl'>
+avi debug: </list 'strl'>
+avi debug: <list 'strl'>
+access_http debug: trying to seek to 8650
+main debug: net: connecting to 169.254.194.95 port 9000
+main debug: connection succeeded (socket = 34)
+access_http debug: protocol 'HTTP' answer code 206
+access_http debug: Content-Type: video/x-msvideo
+access_http debug: stream size=490788616,pos=8650,remaining=490779966
+access_http debug: this frame size=490779966
+access_http debug: Connection: close
+avi debug: </list 'strl'>
+avi debug: </list 'hdrl'>
+avi debug: <list 'INFO'>
+avi debug: </list 'INFO'>
+avi debug: skipping movi chunk
+avi debug: </list 'AVI '>
+avi debug: * LIST-root size:490788616 pos:0
+avi debug:     + RIFF-AVI  size:490788608 pos:0
+avi debug:     |   + LIST-hdrl size:8898 pos:12
+avi debug:     |   |   + avih size:56 pos:24
+avi debug:     |   |   + LIST-strl size:4316 pos:88
+avi debug:     |   |   |   + strh size:56 pos:100
+avi debug:     |   |   |   + strf size:40 pos:164
+avi debug:     |   |   |   + JUNK size:4116 pos:212
+avi debug:     |   |   |   + vprp size:68 pos:4336
+avi debug:     |   |   + LIST-strl size:4230 pos:4412
+avi debug:     |   |   |   + strh size:56 pos:4424
+avi debug:     |   |   |   + strf size:30 pos:4488
+avi debug:     |   |   |   + JUNK size:4116 pos:4526
+avi debug:     |   |   + JUNK size:260 pos:8650
+avi debug:     |   + LIST-INFO size:26 pos:8918
+avi debug:     |   |   + ISFT size:13 pos:8930
+avi debug:     |   + JUNK size:1016 pos:8952
+avi debug:     |   + LIST-movi size:487768448 pos:9976
+avi debug: AVIH: 2 stream, flags  HAS_INDEX IS_INTERLEAVED TRUST_CKTYPE 
+avi debug: stream[0] rate:25 scale:1 samplesize:0
+avi debug: stream[0] video(XVID) 720x404 24bpp 25.000000fps
+main debug: selecting program id=0
+avi debug: stream[1] rate:125 scale:3 samplesize:0
+avi debug: stream[1] audio(0x55 - MPEG Audio layer 1/2/3) 2 channels 48000Hz 0bits
+avi warning: cannot find idx1 chunk, no index defined
+avi debug: selected standard index for stream[0]
+avi debug: selected standard index for stream[1]
+avi error: no key frame set for track 0
+avi debug: stream[0] created 0 index entries
+avi error: no key frame set for track 1
+avi debug: stream[1] created 0 index entries
+avi warning: broken or missing index, 'seek' will be approximative or will exhibit strange behavior
+avi warning: cannot create index (unseekable stream)
+avi warning: cannot find idx1 chunk, no index defined
+avi debug: selected standard index for stream[0]
+avi debug: selected standard index for stream[1]
+avi error: no key frame set for track 0
+avi debug: stream[0] created 0 index entries
+avi error: no key frame set for track 1
+avi debug: stream[1] created 0 index entries
+avi warning: broken or missing index, 'seek' will be approximative or will exhibit strange behavior
+main debug: using demux module "avi"
+main debug: looking for decoder module matching "any": 38 candidates
+macosx debug: no optical media found
+avcodec debug: trying to use direct rendering
+avcodec debug: allowing 4 thread(s) for decoding
+avcodec debug: avcodec codec (MPEG-4 Video) started
+main debug: using decoder module "avcodec"
+main debug: looking for decoder module matching "any": 38 candidates
+main debug: using decoder module "mpeg_audio"
+main debug: looking for meta reader module matching "any": 2 candidates
+lua debug: Trying Lua scripts in /Users/izqui/Library/Application Support/org.videolan.vlc/lua/meta/reader
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/meta/reader
+lua debug: Trying Lua playlist script /Users/izqui/Applications/VLC.app/Contents/MacOS/share/lua/meta/reader/filename.luac
+lua debug: Trying Lua scripts in /Users/izqui/Applications/VLC.app/Contents/MacOS/share/share/lua/meta/reader
+main debug: no meta reader modules matched
+main debug: `http://169.254.194.95:9000/0' successfully opened
+main debug: Buffering 0%
+mpeg_audio debug: MPGA channels:2 samplerate:48000 bitrate:96
+main debug: reusing audio output
+main debug: Buffering 0%
+main debug: VLC is looking for: 'mpga' 48000 Hz Stereo frame=1152 samples/969 bytes
+auhal debug: attempting to use device 0
+main debug: Buffering 14%
+auhal debug: using default audio device 38
+main debug: Buffering 28%
+main debug: Buffering 43%
+auhal debug: found 12 stream formats for stream id 39
+main debug: Buffering 60%
+main debug: Buffering 74%
+main debug: Buffering 88%
+auhal debug: Audio device supports PCM mode only
+main debug: Stream buffering done (1032 ms in 1 ms)
+main debug: looking for text renderer module matching "any": 3 candidates
+freetype debug: looking for Arial Unicode MS
+freetype debug: found /Library/Fonts/Arial Unicode.ttf
+freetype debug: Using Arial Unicode MS as font from file /Library/Fonts/Arial Unicode.ttf
+auhal debug: current format is: [44100.000000][mcpl][9][8][1][8][2][32]
+auhal debug: layout of AUHAL has 2 channels
+auhal debug: selected 2 physical channels for device output
+auhal debug: VLC will output: Stereo
+auhal debug: we set the AU format: [48000.000000][mcpl][9][8][1][8][2][32]
+auhal debug: the actual set AU format is [48000.000000][mcpl][9][8][1][8][2][32]
+auhal debug: analog output successfully opened
+main debug: output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+main debug: looking for audio volume module matching "any": 2 candidates
+main debug: using audio volume module "float_mixer"
+main debug: input 'mpga' 48000 Hz Stereo frame=1152 samples/969 bytes
+main debug: looking for audio filter module matching "scaletempo": 14 candidates
+freetype debug: using fontsize: 2
+scaletempo debug: format: 48000 rate, 2 nch, 4 bps, fl32
+scaletempo debug: params: 30 stride, 0.200 overlap, 14 search
+scaletempo debug: 1.000 scale, 1440.000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+main debug: using audio filter module "scaletempo"
+main debug: conversion: 'mpga'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+main debug: looking for audio converter module matching "any": 11 candidates
+main debug: using text renderer module "freetype"
+main debug: looking for video filter2 module matching "any": 54 candidates
+swscale debug: 32x32 chroma: YUVA -> 16x16 chroma: RGBA with scaling using Bicubic (good quality)
+main debug: using video filter2 module "swscale"
+main debug: looking for video filter2 module matching "any": 54 candidates
+macosx debug: prevented sleep through IOKit (9812)
+main debug: no audio converter modules matched
+main debug: looking for audio converter module matching "any": 11 candidates
+mpgatofixed32 debug: mpga->f32l, bits per sample: 32
+main debug: using audio converter module "mpgatofixed32"
+main debug: conversion pipeline complete
+main debug: conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz Stereo->Stereo
+main debug: conversion pipeline complete
+main debug: looking for audio resampler module matching "any": 2 candidates
+main debug: using audio resampler module "ugly_resampler"
+main debug: End of audio preroll
+yuvp debug: YUVP to YUVA converter
+main debug: using video filter2 module "yuvp"
+main debug: Deinterlacing available
+main debug: deinterlace 0, mode blend, is_needed 0
+main debug: Opening vout display wrapper
+main debug: looking for vout display module matching "any": 5 candidates
+main debug: looking for vout window nsobject module matching "any": 1 candidates
+macosx debug: returning videoview with proposed position x=0, y=0, width=720, height=405
+main debug: using vout window nsobject module "macosx"
+macosx debug: toggle playlist from state: removed splitview 0, minimized view 0. Sender is 0x0, unhide video view 0
+macosx debug: toggle playlist to state: removed splitview 0, minimized view 0
+macosx debug: releasing old sleep blocker (9812)
+macosx debug: prevented sleep through IOKit (9814)
+main debug: VoutDisplayEvent 'resize' 720x404 window
+main debug: using vout display module "vout_macosx"
+main debug: VoutDisplayEvent 'resize' 720x405 window
+main debug: original format sz 720x404, of (0,0), vsz 720x404, 4cc I420, sar 404:405, msk r0x0 g0x0 b0x0
+main debug: removing module "freetype"
+main debug: looking for text renderer module matching "any": 3 candidates
+freetype debug: looking for Arial Unicode MS
+freetype debug: found /Library/Fonts/Arial Unicode.ttf
+freetype debug: Using Arial Unicode MS as font from file /Library/Fonts/Arial Unicode.ttf
+freetype debug: using fontsize: 2
+main debug: using text renderer module "freetype"
+avcodec debug: using direct rendering
+main debug: End of video preroll
+main debug: Received first picture
+freetype debug: looking for Arial Unicode MS
+freetype debug: found /Library/Fonts/Arial Unicode.ttf
+main debug: Decoder buffering done in 1308 ms
+macosx debug: releasing sleep blocker (9814)
+main warning: early picture skipped
+access_http debug: trying to seek to 79546765
+main debug: net: connecting to 169.254.194.95 port 9000
+main debug: connection succeeded (socket = 34)
+access_http debug: protocol 'HTTP' answer code 206
+access_http debug: Content-Type: video/x-msvideo
+access_http debug: stream size=490788616,pos=79546765,remaining=411241851
+access_http debug: this frame size=411241851
+access_http debug: Connection: close
+main debug: Buffering 0%
+avi warning: seems to have lost position, resync
+main debug: End of audio preroll
+main debug: Buffering 14%
+main debug: Buffering 28%
+main debug: Buffering 43%
+main debug: Buffering 57%
+main debug: End of video preroll
+main debug: Received first picture
+main debug: Buffering 74%
+main debug: Buffering 88%
+main debug: Stream buffering done (1032 ms in 283 ms)
+main debug: Decoder buffering done in 0 ms
+main warning: early picture skipped
+main warning: early picture skipped
+main warning: early picture skipped
+main warning: early picture skipped
+main warning: early picture skipped
+main debug: discarded audio buffer
+main debug: discarded audio buffer
+main debug: discarded audio buffer
+main debug: discarded audio buffer
+main debug: discarded audio buffer
+main debug: Buffering 0%
+avi warning: seems to have lost position, resync
+main debug: End of audio preroll
+main debug: Buffering 16%
+main debug: Buffering 31%
+main debug: Buffering 45%
+main debug: Buffering 60%
+main debug: Buffering 76%
+main debug: Buffering 91%
+main debug: Stream buffering done (1056 ms in 77 ms)
+main debug: End of video preroll
+main debug: Received first picture
+main debug: Decoder buffering done in 8 ms
+macosx debug: Terminating
+-- logger module stopped --
+-- logger module stopped --

@@ -9,27 +9,34 @@ import (
 )
 
 type Beacon struct {
+	BeaconData
+	Power byte
+
+	GattServer *gatt.Server
+}
+
+type BeaconData struct {
 	Identifier []byte
 	Major      uint16
 	Minor      uint16
-	Power      byte
-
-	GattServer gatt.Server
 }
 
-func NewBeacon(uuid string, major, minor int) (*Beacon, error) {
+func NewBeaconData(uuid string, major, minor int) (BeaconData, error) {
 
 	id, err := ParseUUID(uuid)
 	if err != nil {
-		return nil, err
+		return BeaconData{}, err
 	}
 
-	return &Beacon{Identifier: id, Major: uint16(major), Minor: uint16(minor), Power: 0xC5}, nil
+	return BeaconData{Identifier: id, Major: uint16(major), Minor: uint16(minor)}, nil
+}
+
+func NewBeacon(data BeaconData) *Beacon {
+
+	return &Beacon{data, 0xC5, &gatt.Server{Name: "ibeacon"}}
 }
 
 func (b *Beacon) StartAdvertising() error {
-
-	server := &gatt.Server{Name: "iBeacon"}
 
 	advertisingPacket := []byte{}
 	advertisingPacket = append(advertisingPacket, 0x02)                                                  // Number of bytes that follow in first advertising structure
@@ -44,8 +51,8 @@ func (b *Beacon) StartAdvertising() error {
 	advertisingPacket = append(advertisingPacket, []byte{uint8(b.Minor >> 8), uint8(b.Minor & 0xff)}...) // iBeacon minor
 	advertisingPacket = append(advertisingPacket, b.Power)
 
-	server.AdvertisingPacket = advertisingPacket
-	return server.AdvertiseAndServe()
+	b.GattServer.AdvertisingPacket = advertisingPacket
+	return b.GattServer.AdvertiseAndServe()
 }
 
 func (b *Beacon) StopAdvertising() error {
