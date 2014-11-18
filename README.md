@@ -2,7 +2,7 @@
 
 Advertise iBeacons using Go.
 
-Only tested in Raspberry Pi running Raspbian. 
+Only tested in Raspberry Pi and Banana Pi running Raspbian. 
 
 ### Usage
 ```go
